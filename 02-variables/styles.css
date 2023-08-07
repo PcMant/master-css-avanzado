@@ -1,0 +1,25 @@
+/*El selector :root aplica a todo el HTML, representa la raíz del
+documento*/
+:root{
+    --color-principal: red;
+    --fuente: Verdana, sans-serif;
+    --fuente-size: 35px;
+}
+
+h1{
+    color: var(--color-principal);
+    font-family: var(--fuente);
+    font-size: var(--fuente-size);
+}
+
+h3{
+    font-size: var(--fuente-size);
+}
+
+p{
+   font-family: var(--fuente); 
+}
+
+a{
+    color: var(--color-principal);
+}
