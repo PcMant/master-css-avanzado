@@ -11,7 +11,122 @@
     <link rel="stylesheet" href="./assets/css/styles.css">
 </head>
 <body>
-    <h1>Portafolio</h1>
-    <i class="fa-regular fa-star" style="font-size:250px"></i>
+    
+    <!-- layout principal (layout es todo el contenido)-->
+    <div class="layout">
+
+        <!-- Barra lataral (info usuario)-->
+        <aside class="layout__aside">
+            
+            <section class="aside__user-info">
+
+                <!-- Información general usuario -->
+                <div class="user-info__general">
+                    <div class="user-info__cointainer-image">
+                        <img src="./assets/img/default-user.jpg" alt="Foto de perfil del usuario" class="user-info__image">
+                    </div>
+
+                    <h2 class="user-info__name">Juan Molina</h2>
+                    <h4 class="user-info__job">Desarrollador web</h4>
+                </div>
+
+                <!-- Menú de navegación -->
+                <nav class="layout__menu">
+                    <ul class="menu__list">
+
+                        <li class="menu__option">
+                            <a href="index.html" class="menu__link">
+                                <i class="menu__icon fa-solid fa-house"></i>
+                                <span class="menu__overlay">Home</span>
+                            </a>
+                        </li>
+
+                        <li class="menu__option">
+                            <a href="sobre-mi.html" class="menu__link">
+                                <i class="menu__icon fa-solid fa-user"></i>
+                                <span class="menu__overlay">Sobre mi</span>
+                            </a>
+                        </li>
+
+                        <li class="menu__option">
+                            <a href="estudios.html" class="menu__link">
+                                <i class="menu__icon fa-solid fa-graduation-cap"></i>
+                                <span class="menu__overlay">Estudios</span>
+                            </a>
+                        </li>
+
+                        <li class="menu__option">
+                            <a href="portafolio.html" class="menu__link">
+                                <i class="menu__icon fa-solid fa-briefcase"></i>
+                                <span class="menu__overlay">Portafolio</span>
+                            </a>
+                        </li>
+
+                        <li class="menu__option">
+                            <a href="blog.html" class="menu__link">
+                                <i class="menu__icon fa-solid fa-book"></i>
+                                <span class="menu__overlay">Blog</span>
+                            </a>
+                        </li>
+
+                        <li class="menu__option">
+                            <a href="contacto.html" class="menu__link">
+                                <i class="menu__icon fa-solid fa-envelope"></i>
+                                <span class="menu__overlay">Contacto</span>
+                            </a>
+                        </li>
+
+                    </ul>
+                </nav>
+
+                <!-- Links a redes sociales -->
+                <div class="user-info__links">
+                    <ul class="links__social">
+                        
+                        <li class="social__option">
+                            <a href="#" class="social__link">
+                                <i class="social__icon fa-brands fa-youtube"></i>
+                            </a>
+                        </li>
+
+                        <li class="social__option">
+                            <a href="#" class="social__link">
+                                <i class="social__icon fa-brands fa-linkedin"></i>
+                            </a>
+                        </li>
+
+                        <li class="social__option">
+                            <a href="#" class="social__link">
+                                <i class="social__icon fa-brands fa-instagram"></i>
+                            </a>
+                        </li>
+
+                    </ul>
+                </div>
+
+                <!-- Botón del currículum-->
+                <div class="user-info__buttons">
+                    <a href="#" class="user-info__btn">Descargar CV</a>
+                </div>
+
+                <!-- Pie de página-->
+                <footer class="user-info__footer">
+                    &copy; 2023 Juan Molina
+                </footer>
+            </section>
+
+        </aside>
+
+        <!-- Contenido principal -->
+        <main class="layout__content">
+
+            <section class="content__page">
+                <h1 class="page__name">Juan Molina</h1>
+                <h2 class="page__job">Web Developer Full-Stack && SysAdmin</h2>
+            </section>
+
+        </main>
+
+    </div>
 </body>
 </html>
