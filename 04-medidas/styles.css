@@ -1,0 +1,78 @@
+/*
+%
+- En fuentes no tiene sentido usar %
+- En height no van bien los % a menos que body o el contenedor
+padre tengan una altura con una medida absoluta y fija, en caso
+contrario usar % caracería de sentido.
+
+em:
+-Para los em definimos de manera general un tamaño de fuente,
+pues cada em hace referencia a dicho tamaño definido.
+- Pero en los elementos hijo que use dentro de una caja que aplica
+a su fuente la unidad em no conviene usar también em debido a que
+su tamaño se verá alterado y no sería preciso a lo esperado ya
+que se estaría definciendo nuevamente el valor de em y seria a partir
+del tamaño definido en el elemento padre.
+- La ventaja el em es que todo es relativo a dicha medida.
+
+- Diferencia entre em y rem: em dependen del elemento padre siendo un poco más
+lioso.
+
+rem
+- Es parecido al em, pero sin depender del contenedor padre, unicamente del
+elemento raiz, siendo por defecto 1 rem = 16 px.
+- Esto seria últil para hacer responsive, definiendo un tamaño nuevo con un
+media query.
+*/
+html{
+    font-size: 20px;
+}
+
+/* body{
+    font-size: 20px;
+} */
+
+.caja{
+    width: 250px;
+    height: 250px;
+    margin: 0 auto;
+    background: aquamarine;
+    border: 1px solid black;
+    text-align: center;
+    font-size: 2rem;
+}
+
+.padre{
+    font-size: 10px;
+}
+
+.padre h2{
+    font-size: 3em;
+}
+
+.padre2{
+    font-size: 34px;
+}
+
+.padre2 h3{
+    font-size: 3em;
+}
+
+@media (max-width: 768px) {
+    :root {
+        font-size: 15px;
+        background-color: red;
+    }
+}
+
+@media (max-width: 520px) {
+    :root {
+        font-size: 10px;
+    }
+}
+
+@media (max-width: 368px) {
+    :root {
+        font-size: 8px;
+    }
+}
