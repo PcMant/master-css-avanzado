@@ -15,7 +15,7 @@
     <link rel="stylesheet" href="./assets/css/scroll.css" />
     <link rel="stylesheet" href="./assets/css/styles.css" />
   </head>
-  <body>
+  <section>
     <!-- layout principal (layout es todo el contenido)-->
     <div class="layout">
       <!-- Barra lataral (info usuario)-->
@@ -46,7 +46,7 @@
               </li>
 
               <li class="menu__option">
-                <a href="sobre-mi.html" class="menu__link">
+                <a href="sobre-mi.html" class="menu__link menu__link--active">
                   <i class="menu__icon fa-solid fa-user"></i>
                   <span class="menu__overlay">Sobre mi</span>
                 </a>
@@ -162,17 +162,18 @@
                 </li>
               </ul>
             </div>
+          </section>
 
             <section class="about__services">
-              <div class="services__header">
+              <header class="services__header">
                 <h2 class="services__title">
                   Lo que <span class="title__color">hago</span>
                 </h2>
-
+              </header>
                 <div class="services__container">
                   <article class="services__service">
                     <div class="service__icon">
-                      <i class="fa-solid fa-code"></i>
+                      <i class="service__real-icon fa-solid fa-code"></i>
                     </div>
 
                     <div class="service__content">
@@ -183,19 +184,14 @@
                         numquam accusamus provident, excepturi illo voluptatem
                         eveniet perspiciatis a voluptatibus, non adipisci. Iste
                         accusamus illo porro quae distinctio accusantium est
-                        dignissimos, voluptatibus fugit aspernatur! Maiores,
-                        veniam iure. Non et excepturi unde in asperiores iusto,
-                        quasi molestias quis itaque quae consectetur officia
-                        iste numquam consequatur quam autem quas consequuntur
-                        minus libero natus ratione accusamus? Ab laboriosam at
-                        modi quia et facilis ratione quaerat ipsam.
+                        dignissimos, voluptatibus fugit aspernatur!
                       </p>
-                    </div>
+                    
                   </article>
                   
                   <article class="services__service">
                     <div class="service__icon">
-                      <i class="fa-solid fa-chalkboard-teacher"></i>
+                      <i class="service__real-icon fa-solid fa-chalkboard-teacher"></i>
                     </div>
 
                     <div class="service__content">
@@ -206,19 +202,14 @@
                         numquam accusamus provident, excepturi illo voluptatem
                         eveniet perspiciatis a voluptatibus, non adipisci. Iste
                         accusamus illo porro quae distinctio accusantium est
-                        dignissimos, voluptatibus fugit aspernatur! Maiores,
-                        veniam iure. Non et excepturi unde in asperiores iusto,
-                        quasi molestias quis itaque quae consectetur officia
-                        iste numquam consequatur quam autem quas consequuntur
-                        minus libero natus ratione accusamus? Ab laboriosam at
-                        modi quia et facilis ratione quaerat ipsam.
+                        dignissimos, voluptatibus fugit aspernatur!
                       </p>
                     </div>
                   </article>
 
                   <article class="services__service">
                     <div class="service__icon">
-                      <i class="fa-solid fa-computer"></i>
+                      <i class="service__real-icon fa-solid fa-computer"></i>
                     </div>
 
                     <div class="service__content">
@@ -229,19 +220,14 @@
                         numquam accusamus provident, excepturi illo voluptatem
                         eveniet perspiciatis a voluptatibus, non adipisci. Iste
                         accusamus illo porro quae distinctio accusantium est
-                        dignissimos, voluptatibus fugit aspernatur! Maiores,
-                        veniam iure. Non et excepturi unde in asperiores iusto,
-                        quasi molestias quis itaque quae consectetur officia
-                        iste numquam consequatur quam autem quas consequuntur
-                        minus libero natus ratione accusamus? Ab laboriosam at
-                        modi quia et facilis ratione quaerat ipsam.
+                        dignissimos, voluptatibus fugit aspernatur!
                       </p>
                     </div>
                   </article>
 
                   <article class="services__service">
                     <div class="service__icon">
-                      <i class="fa-solid fa-terminal"></i>
+                      <i class="service__real-icon fa-solid fa-terminal"></i>
                     </div>
 
                     <div class="service__content">
@@ -252,18 +238,13 @@
                         numquam accusamus provident, excepturi illo voluptatem
                         eveniet perspiciatis a voluptatibus, non adipisci. Iste
                         accusamus illo porro quae distinctio accusantium est
-                        dignissimos, voluptatibus fugit aspernatur! Maiores,
-                        veniam iure. Non et excepturi unde in asperiores iusto,
-                        quasi molestias quis itaque quae consectetur officia
-                        iste numquam consequatur quam autem quas consequuntur
-                        minus libero natus ratione accusamus? Ab laboriosam at
+                        dignissimos, voluptatibus fugit aspernatur!oriosam at
                         modi quia et facilis ratione quaerat ipsam.
                       </p>
                     </div>
                   </article>
 
                 </div>
-              </div>
             </section>
 
             <section class="about__reviews">
@@ -277,7 +258,7 @@
                             <img src="./assets/img/testimonio1.jpg" class="review__image" alt="Cara de un cliente">
                         </div>
 
-                        <div class="review__desciption">
+                        <div class="review__description">
                             <p class="review__text">
                                 Lorem ipsum, dolor sit amet consectetur adipisicing elit. Id recusandae voluptatibus numquam animi, deserunt repudiandae amet corrupti natus consequuntur mollitia ipsam, quasi reiciendis, corporis minima placeat nihil. Doloribus, fuga voluptas?
                             </p>
@@ -288,11 +269,12 @@
                                 <h3 class="author__name">Ana Lopez</h3>
                                 <h5 class="review__company">Developers S.A</h5>
                             </div>
+
+                            <div class="review__author-icon">
+                              <i class="review__icon fa-solid fa-quote-right"></i>
+                            </div>
                         </div>
 
-                        <div class="review__author-icon">
-                            <i class="review__icon fa-solid fa-quote-right"></i>
-                        </div>
                     </article>
 
                     <article class="reviews__review">
@@ -300,7 +282,7 @@
                             <img src="./assets/img/testimonio2.jpg" class="review__image" alt="Cara de un cliente">
                         </div>
 
-                        <div class="review__desciption">
+                        <div class="review__description">
                             <p class="review__text">
                                 Lorem ipsum, dolor sit amet consectetur adipisicing elit. Id recusandae voluptatibus numquam animi, deserunt repudiandae amet corrupti natus consequuntur mollitia ipsam, quasi reiciendis, corporis minima placeat nihil. Doloribus, fuga voluptas?
                             </p>
@@ -311,11 +293,12 @@
                                 <h3 class="author__name">Ruben Martinez</h3>
                                 <h5 class="review__company">Fullstack SL</h5>
                             </div>
+
+                            <div class="review__author-icon">
+                              <i class="review__icon fa-solid fa-quote-right"></i>
+                            </div>
                         </div>
 
-                        <div class="review__author-icon">
-                            <i class="review__icon fa-solid fa-quote-right"></i>
-                        </div>
                     </article>
 
                 </div>
@@ -362,7 +345,7 @@
 
             </section>
 
-          </section>
+          
 
           <section class="about__prices">
             <header class="prices__header">
@@ -456,7 +439,7 @@
                 </article>
 
                 <article class="extra__info">
-                    <i class="extra__icon fa-solid fa-start"></i>
+                    <i class="extra__icon fa-solid fa-star"></i>
                     <h4 class="extra__subtitle">Puntuación</h4>
                     <span class="extra__quantity">10</span>
                 </article>
