@@ -326,8 +326,9 @@ body{
     color: var(--color-subtitle);
 }
 
-/*SOBRE MI*/
-.content__about{
+/*ESTILOS GENERALES (SOBRE MI Y OTRAS PÁGINAS)*/
+.content__about,
+.content__resume{
     display: block;
     height: 100%;
     min-height: 100%;
@@ -342,17 +343,20 @@ body{
     -o-border-radius: 3.2rem;
 }
 
-.about__header{
+.about__header,
+.resume__header{
     margin-bottom: 4.5rem;
 }
 
-.about__title{
+.about__title,
+.resume__title{
     display: inline-block;
     position: relative;
     font-size: 3.2rem;
 }
 
-.about__title::after{
+.about__title::after,
+.resume__title::after{
     content: "";
     position: absolute;
     top: 20px;
@@ -367,6 +371,8 @@ body{
 .title__color{
     color: var(--color-secondary);
 }
+
+/*SOBRE MI*/
 
 /*INFORMACIÓN PERSONAL*/
 .about__personal-info{
