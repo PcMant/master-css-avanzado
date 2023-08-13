@@ -684,7 +684,7 @@ body{
     -o-transition: all 300ms ease-in-out;
 }
 
-.prices__btn:hover{/*problema con el cambio de borde, altera el tamaño de la caja, no entiendo porque si el borde es el mismo y he hecho lo mismo de la clase*/
+.prices__btn:hover{
     border: 2px solid var(--color-secondary);
     background-color: var(--color-secondary);
     color: var(--color-principal);
