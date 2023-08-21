@@ -12,6 +12,9 @@
   <link rel="stylesheet" href="./assets/css/reset.css" />
   <link rel="stylesheet" href="./assets/css/scroll.css" />
   <link rel="stylesheet" href="./assets/css/styles.css" />
+  <link rel="stylesheet" href="./assets/css/loader.css" />
+
+  <script src="assets/js/map.js" defer></script>
 </head>
 
 <body>
@@ -130,27 +133,15 @@
               <h2 class="contact__subtitle">Madrid</h2>
             </div>
 
-          </section>
-
-          <section class="contact__info">
-
             <div class="contact__data">
               <i class="contact__icon fa-solid fa-phone"></i>
               <h2 class="contact__subtitle">666 777 888</h2>
             </div>
 
-          </section>
-
-          <section class="contact__info">
-
             <div class="contact__data">
               <i class="contact__icon fa-solid fa-envelope"></i>
               <h2 class="contact__subtitle">juan@pcmant.com</h2>
             </div>
-
-          </section>
-
-          <section class="contact__info">
 
             <div class="contact__data">
               <i class="contact__icon fa-solid fa-circle-check"></i>
@@ -161,17 +152,12 @@
 
           <section class="contact__form-box">
 
-            <div class="contact__map">
-              <!--iframe
-                frameborder="0" scrolling="0" marginheight="0" marginwidth="0"
-                loading="lazy"
-                referrerpolicy="no-referrer-when-downgrade"
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d194347.4782701837!2d-3.8443433621551946!3d40.43809861028024!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd422997800a3c81%3A0xc436dec1618c2269!2sMadrid!5e0!3m2!1ses!2ses!4v1692551184401!5m2!1ses!2ses"
-                ></iframe-->
+            <div id="load-iframe-map" class="contact__map">
+              <span class="loader"></span>
             </div>
 
             <header class="contact__form-header">
-              <h3 class="contact__subtitle">¿Cómo puedo <span class="subtitle__color">Ayudarte?</span></h3>
+              <h3 class="form-header__title">¿Cómo puedo <span class="subtitle__color">Ayudarte?</span></h3>
             </header>
 
             <form class="contact__form">
@@ -179,18 +165,18 @@
 
                 <section class="form__left">
 
-                  <div class="from__group">
-                    <input type="text" class="from__input" name="name" placeholder="Nombre" required>
+                  <div class="form__group">
+                    <input type="text" class="form__input" name="name" placeholder="Nombre" required>
                     <label for="name" class="form__label">Nombre</label>
                   </div>
 
-                  <div class="from__group">
-                    <input type="email" class="from__input" name="email" placeholder="Email" required>
+                  <div class="form__group">
+                    <input type="email" class="form__input" name="email" placeholder="Email" required>
                     <label for="name" class="form__label">Email</label>
                   </div>
 
-                  <div class="from__group">
-                    <input type="text" class="from__input" name="subject" placeholder="Asunto" required>
+                  <div class="form__group">
+                    <input type="text" class="form__input" name="subject" placeholder="Asunto" required>
                     <label for="subject" class="form__label">Asunto</label>
                   </div>
 
@@ -198,26 +184,26 @@
 
                 <section class="form__right">
 
-                  <div class="from__group">
-                    <textarea class="from__input from__input--textarea" name="message" placeholder="Mensaje"
+                  <div class="form__group form__group--textarea">
+                    <textarea class="form__input form__input--textarea" name="message" placeholder="Mensaje"
                       required></textarea>
                     <label for="message" class="form__label">Mensaje</label>
                   </div>
 
                 </section>
 
-                <input type="submit" class="form__button" value="Enviar mensaje">
+              </section>
+
+              <input type="submit" class="form__button" value="Enviar mensaje">
+
+            </form>
+
+          </section>    
 
         </div>
-        </form>
 
       </section>
-
-  </div>
-
-
-  </section>
-  </main>
+    </main>
   </div>
 </body>
 
