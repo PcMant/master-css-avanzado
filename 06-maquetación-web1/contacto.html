@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1" />
   <title>Portafolio - Juan Molina</title>
 
   <!-- Estilos -->
@@ -13,7 +13,10 @@
   <link rel="stylesheet" href="./assets/css/scroll.css" />
   <link rel="stylesheet" href="./assets/css/styles.css" />
   <link rel="stylesheet" href="./assets/css/loader.css" />
+  <link rel="stylesheet" href="./assets/css/responsive.css" />
 
+  <!--Script JS (defer es para que se ejecute una vez este el DOM cargado)-->
+  <script src="assets/js/menu.js" defer></script>
   <script src="assets/js/map.js" defer></script>
 </head>
 
@@ -112,6 +115,12 @@
         <footer class="user-info__footer">&copy; 2023 Juan Molina</footer>
       </section>
     </aside>
+
+    <!--Menu responsive-->
+    <div class="layout__menu-toggle">
+      <i class="menu-toggle__icon fa-solid fa-bars"></i>
+      <i class="menu-toggle__icon fa-solid fa-xmark"></i>
+    </div>
 
     <!-- Contenido principal -->
     <main class="layout__content">
