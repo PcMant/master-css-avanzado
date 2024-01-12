@@ -16,3 +16,6 @@
 # Ignore all local history of files
 .history
 .ionide
+
+#git-sim
+/git-sim_media
